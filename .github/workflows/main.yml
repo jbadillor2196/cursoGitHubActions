@@ -1,0 +1,8 @@
+name: Ejemplo GitHub Actions
+on: [push]
+jobs:
+    saludar
+        run-on: ubuntu-latest
+        steps:
+            - name: Muestra mensaje Hola Mundo
+            run: echo "Hola Mundo con GitHub Actions"
