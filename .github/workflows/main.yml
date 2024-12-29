@@ -4,9 +4,17 @@ on:
     # push:
     #     branches:
     #         - main
+    # schedule:
+    # - cron: '*/5 * * * *' # Cada 5 minutos
 jobs:
     saludar:
         runs-on: ubuntu-latest
         steps:
             - name: Muestra mensaje Hola Mundo
               run: echo "Hola Mundo con GitHub Actions"
+            - name: Checkout
+              uses: actions/checkout@v4.2.2
+            - name: Listar archivos del repositorio
+              run: |
+                  echo: "El repositorio ${{github.repositorio}} contiene los siguientes archivos"
+                  tree
