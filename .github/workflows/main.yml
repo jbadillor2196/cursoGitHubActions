@@ -1,5 +1,6 @@
 name: Ejemplo GitHub Actions
 on: 
+    workflow_dispatch:
     push:
         branches:
             - main
