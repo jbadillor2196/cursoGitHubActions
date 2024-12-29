@@ -1,5 +1,8 @@
 name: Ejemplo GitHub Actions
-on: [push]
+on: 
+    push:
+        branches:
+            - main
 jobs:
     saludar:
         runs-on: ubuntu-latest
