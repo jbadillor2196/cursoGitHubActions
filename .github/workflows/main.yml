@@ -1,9 +1,9 @@
 name: Ejemplo GitHub Actions
 on: 
     workflow_dispatch:
-    push:
-        branches:
-            - main
+    # push:
+    #     branches:
+    #         - main
 jobs:
     saludar:
         runs-on: ubuntu-latest
